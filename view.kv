@@ -11,9 +11,20 @@
     TextInput:
         hint_text: "$"
         on_text: root.bill_input = self.text
+    
+    Label:
+        text: 'Number of People'
+
+    TextInput:
+        hint_text: "1"
+        on_text: root.num_people_input = self.text
+
 
     Label:
         text: root.tip_output
+    
+    Label:
+        text: root.split_output
 
     Button:
         text: 'Calculate 15% Tip'
